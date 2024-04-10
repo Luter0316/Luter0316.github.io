@@ -4,6 +4,16 @@ body {
 	font-size: 18px;
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
+	text-align: center;
+}
+
+.h1 {
+	margin-top: 20px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
 }
 
 .container {
@@ -14,10 +24,12 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 200px 200px 200px;
+	grid-gap: 50px;
 }
 
 .img {
 	width: 150px;
+	margin-bottom: -25px;
 }
 
 .item {
@@ -26,7 +38,7 @@ body {
 
 .btn {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	border: none;
 	background: rgb(248, 168, 24);
 	border-radius: 10px;
@@ -41,22 +53,15 @@ body {
 	background: lightgreen;
 }
 
-.usercard {
-	text-align: center;
+.added-to-cart {
+	display: inline-block;
+	padding: 10px 10px;
+	border: none;
+	background: rgb(204, 49, 49);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+	transition: background .2s linear;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
