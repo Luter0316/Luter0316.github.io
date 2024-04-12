@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = [];
+let items = [];
 
 // Смена главной кнопки при выборе товара
 function toggleItem(btn, itemId, price){
