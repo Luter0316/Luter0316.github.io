@@ -10,7 +10,7 @@ let item = [];
 // Смена главной кнопки при выборе товара
 function toggleItem(btn, itemId, price){
 	let item = items.find(i => i.id === itemId);
-	if (item) {
+	if (!item) {
 		let newItem = {id: itemId, price: price};
 		item.push(newItem);
 		btn.classList.add('added-to-cart');
