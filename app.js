@@ -12,10 +12,10 @@ function toggleItem(btn, itemId, price){
 	let item = items.find(i => i.id === itemId);
 	if (!item) {
 		let newItem = {id: itemId, price: price};
-		item.push(newItem);
+		items.push(newItem);
 		btn.classList.add('added-to-cart');
 		btn.innerText = "Удалить из корзины";
-		let totalPrice = item.reduce((total, item) => total + item.price, 0);
+		let totalPrice = items.reduce((total, item) => total + item.price, 0);
 		if (totalPrice > 0) {
 			tg.MainButton.setText(`Общая цена товаров: ${totalPrice}`);
 			if (!tg.MainButton.isVisible) {
@@ -25,8 +25,8 @@ function toggleItem(btn, itemId, price){
 			tg.MainButton.hide();
 		}
 	} else {
-		let index = item.indexOf(item);
-		item.splice(index, 1);
+		let index = items.indexOf(item);
+		items.splice(index, 1);
 		btn.classList.remove('added-to-cart');
 		btn.innerText = "Добавить в корзину";
 		let totalPrice = items.reduce((total, item) => total + item.price, 0);
