@@ -60,6 +60,6 @@ document.getElementById("btn1").addEventListener("click", function(){
 	toggleItem(this, "BananaStrips", 200)
 })
 
-document.getElementById("btn1").addEventListener("click", function(){
+document.getElementById("btn2").addEventListener("click", function(){
 	toggleItem(this, "PearStrips", 210)
 })
