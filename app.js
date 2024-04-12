@@ -49,7 +49,7 @@ function calculateTotalPrice() {
 // Отправка данных в Telegram
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	let data = {
-		items: item,
+		items: items,
 		totalPrice: calculateTotalPrice()
 	};
 	tg.sendData(JSON.stringify(data));
@@ -62,4 +62,12 @@ document.getElementById("btn1").addEventListener("click", function(){
 
 document.getElementById("btn2").addEventListener("click", function(){
 	toggleItem(this, "PearStrips", 210)
+})
+
+document.getElementById("btn3").addEventListener("click", function(){
+	toggleItem(this, "KiwiStrips", 250)
+})
+
+document.getElementById("btn4").addEventListener("click", function(){
+	toggleItem(this, "MangoStrips", 280)
 })
