@@ -51,8 +51,7 @@ function calculateTotalPrice() {
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	let data = {
 		items: items,
-		totalPrice: calculateTotalPrice(),
-		chat_id: tg.initDataUnsafe.user.id
+		totalPrice: calculateTotalPrice()
 	};
 	tg.sendData(JSON.stringify(data));
 });
