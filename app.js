@@ -52,9 +52,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	let data = {
 		items: items,
 		totalPrice: calculateTotalPrice()
+		chat_id: tg.initDataUnsafe.user.id
 	};
-	let person = tg.initDataUnsafe.user.id
-	tg.sendData(JSON.stringify(data), person);
+	tg.sendData(JSON.stringify(data));
 });
 
 // Товары
