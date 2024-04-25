@@ -51,7 +51,8 @@ function calculateTotalPrice() {
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	let data = {
 		items: items,
-		totalPrice: calculateTotalPrice()
+		totalPrice: calculateTotalPrice(),
+		person: tg.initDataUnsafe.user.id
 	};
 	tg.sendData(JSON.stringify(data));
 });
@@ -60,27 +61,27 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 document.getElementById("btn1_50").addEventListener("click", function(){
 	toggleItem(this, "BananaStrips", 200, '200 руб. (50гр.)')
 })
-document.getElementById("btn1_100").addEventListener("click", function(){
-	toggleItem(this, "BananaStrips", 390, '390 руб. (100гр.)')
-})
+// document.getElementById("btn1_100").addEventListener("click", function(){
+// 	toggleItem(this, "BananaStrips", 390, '390 руб. (100гр.)')
+// })
 
 document.getElementById("btn2_50").addEventListener("click", function(){
 	toggleItem(this, "PearStrips", 210, '210 руб. (50гр.)')
 })
-document.getElementById("btn2_100").addEventListener("click", function(){
-	toggleItem(this, "PearStrips", 410, '410 руб. (100гр.)')
-})
+// document.getElementById("btn2_100").addEventListener("click", function(){
+// 	toggleItem(this, "PearStrips", 410, '410 руб. (100гр.)')
+// })
 
 document.getElementById("btn3_50").addEventListener("click", function(){
 	toggleItem(this, "KiwiStrips", 250, '250 руб. (50гр.)')
 })
-document.getElementById("btn3_100").addEventListener("click", function(){
-	toggleItem(this, "KiwiStrips", 480, '480 руб. (100гр.)')
-})
+// document.getElementById("btn3_100").addEventListener("click", function(){
+// 	toggleItem(this, "KiwiStrips", 480, '480 руб. (100гр.)')
+// })
 
 document.getElementById("btn4_50").addEventListener("click", function(){
 	toggleItem(this, "MangoStrips", 280, '280 руб. (50гр.)')
 })
-document.getElementById("btn4_100").addEventListener("click", function(){
-	toggleItem(this, "MangoStrips", 550, '550 руб. (100гр.)')
-})
+// document.getElementById("btn4_100").addEventListener("click", function(){
+// 	toggleItem(this, "MangoStrips", 550, '550 руб. (100гр.)')
+// })
