@@ -49,9 +49,10 @@ function calculateTotalPrice() {
 
 // Отправка данных в Telegram
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	alert("Нажата главная кнопка")
 	let data = {
 		items: items,
-		totalPrice: calculateTotalPrice()
+		totalPrice: calculateTotalPrice(),
 	};
 	tg.sendData(JSON.stringify(data));
 });
