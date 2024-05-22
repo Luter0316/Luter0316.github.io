@@ -49,7 +49,6 @@ function calculateTotalPrice() {
 
 // Отправка данных в Telegram
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	alert("Нажата главная кнопка")
 	let data = {
 		items: items,
 		totalPrice: calculateTotalPrice(),
@@ -61,27 +60,39 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 document.getElementById("btn1_50").addEventListener("click", function(){
 	toggleItem(this, "BananaStrips", 200, '200 руб. (50гр.)')
 })
-// document.getElementById("btn1_100").addEventListener("click", function(){
-// 	toggleItem(this, "BananaStrips", 390, '390 руб. (100гр.)')
-// })
 
 document.getElementById("btn2_50").addEventListener("click", function(){
-	toggleItem(this, "PearStrips", 210, '210 руб. (50гр.)')
+	toggleItem(this, "AppleStrips", 240, '240 руб. (50гр.)')
 })
-// document.getElementById("btn2_100").addEventListener("click", function(){
-// 	toggleItem(this, "PearStrips", 410, '410 руб. (100гр.)')
-// })
 
 document.getElementById("btn3_50").addEventListener("click", function(){
-	toggleItem(this, "KiwiStrips", 250, '250 руб. (50гр.)')
+	toggleItem(this, "PearStrips", 270, '270 руб. (50гр.)')
 })
-// document.getElementById("btn3_100").addEventListener("click", function(){
-// 	toggleItem(this, "KiwiStrips", 480, '480 руб. (100гр.)')
-// })
 
 document.getElementById("btn4_50").addEventListener("click", function(){
-	toggleItem(this, "MangoStrips", 280, '280 руб. (50гр.)')
+	toggleItem(this, "KiwiStrips", 280, '280 руб. (50гр.)')
 })
-// document.getElementById("btn4_100").addEventListener("click", function(){
-// 	toggleItem(this, "MangoStrips", 550, '550 руб. (100гр.)')
-// })
+
+document.getElementById("btn5_50").addEventListener("click", function(){
+	toggleItem(this, "OrangeStrips", 230, '230 руб. (50гр.)')
+})
+
+document.getElementById("btn6_50").addEventListener("click", function(){
+	toggleItem(this, "PineappleStrips", 320, '320 руб. (50гр.)')
+})
+
+document.getElementById("btn7_50").addEventListener("click", function(){
+	toggleItem(this, "MangoStrips", 350, '350 руб. (50гр.)')
+})
+
+document.getElementById("btn8_50").addEventListener("click", function(){
+	toggleItem(this, "BananaInCoconutStrips", 230, '230 руб. (50гр.)')
+})
+
+document.getElementById("btn9_50").addEventListener("click", function(){
+	toggleItem(this, "PersimmonStrips", 230, '230 руб. (50гр.)')
+})
+
+document.getElementById("btn10_50").addEventListener("click", function(){
+	toggleItem(this, "CoconutStrips", 350, '350 руб. (50гр.)')
+})
